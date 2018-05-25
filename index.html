@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Montserrat" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+</head>
+<body>
+      <i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+    <div class='main-page'>
+  <div class='navmenu' id='myNavbar'>
+  <a href="#contact">Контакты</a>
+  <a href="#projects">Проекты</a>
+        <a href="#about">Обо мне</a>
+  <a href="">Главная</a>
+        <a href = 'javascript:void(0);' class ='icon' onclick='myFunction()'>&#9776;</a>
+        </div>
+
+    </div>
+
+    <div id="about" class='container-fluid about-page'>
+        <h2 class="text-center">Знаю:</h2>
+        
+
+        <div class="icons">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+                 <i class="devicon-css3-plain-wordmark colored"></i>
+             <i class="devicon-sass-original"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+            
+             <i class="devicon-javascript-plain colored"></i>
+            
+        
+            
+        <i   class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+    </div>
+        <h2 class="text-center">Знаком:</h2>
+        <div class="icons">
+         <i class="devicon-typescript-plain colored"></i>
+        <i class="devicon-php-plain"></i>
+        <i class="devicon-angularjs-plain colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+        <i class="devicon-mysql-plain-wordmark"></i>
+    
+     </div>
+    </div>    
+    <div class="container-fluid" id='projects'>
+        <h1 class=projects-page-info>Мои проекты</h1>
+    <div class="row">
+        <div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://meanvoting-app.herokuapp.com/#/" target='_blank'><img  src="spu-ea68c8-ogi2-3cwn3bmfojjlb56e.jpg"  /><figcaption>Приложение для голосования MEAN stack</figcaption></a></figure></div></div>
+<div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://tenzeniga.github.io/vk-test/" target='_blank'><img  src="vkapi.jpg"  /><figcaption>Vk Api Angular</figcaption></a></figure></div></div>
+        <div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://tenzeniga.github.io/calculator.github.io/" target='_blank'><img  src="https___tenzeniga.github.io_calculator.github.io_-800x0b1024x768_402x302.jpg"  /><figcaption>Javascript calculator</figcaption></a></figure></div></div>
+        <div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://tenzeniga.github.io/pomodoro-timer/" target='_blank'><img  src="https___tenzeniga.github.io_pomodoro-timer_-800x0b1024x768_402x302.jpg"  /><figcaption>Таймер помодоро</figcaption></a></figure></div></div>
+        <div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://tenzeniga.github.io/simon_game/" target='_blank'><img  src="https___tenzeniga.github.io_simon_game_-800x0b1024x768_402x302.jpg"  /><figcaption>Simon game<br>native js</figcaption></a></figure></div></div>
+        <div class='col-lg-4' >
+            <div class='projects-list'><figure><a href="https://tenzeniga.github.io/Tic-tac-toe-game/" target='_blank'><img  src="https___tenzeniga.github.io_ttt_-800x0b1024x768_402x302.jpg"  /><figcaption>Крестики нолики.<br>Непобедимый AI</figcaption></a></figure></div></div>
+
+
+        </div>
+    </div>
+    <footer id='contact'>
+        <h1>Контакты</h1>
+          <div class="contact-icons">
+    <a href="https://vk.com/zeta93162" target="_blank"> <i class="fa fa-vk fa-4x" aria-hidden="true"></i></a>
+    <a href="http://codepen.io/Tenzen/#" target="_blank"> <i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a>
+    <a href="https://github.com/TenzenIga" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+ </div>
+    </footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+    function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navmenu") {
+        x.className += " responsive";
+    } else {
+        x.className = "navmenu";
+    }
+}</script>
+    </body>
+</html>
